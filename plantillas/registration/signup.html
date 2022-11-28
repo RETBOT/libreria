@@ -1,0 +1,13 @@
+<!--Plantillas/registration/signup.html -->
+{% extends '_base.html' %}
+
+{% block title %} - Registro {% endblock title %} 
+
+{% block content %}
+  <h2>Registro</h2>
+  <form action="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Registro</button>
+  </form>
+{% endblock content %}
