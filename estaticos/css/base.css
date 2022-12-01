@@ -1,0 +1,14 @@
+/* estatucis/css/base.css */
+body{
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+h1 {
+  color: red;
+}
+
+.portada {
+  height: 250px !important;
+  width: auto !important;
+}

@@ -38,8 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # locales
-    'cuentas.apps.CuentasConfig',
-    'paginas.apps.PaginasConfig',
+    'cuentas',
+    'paginas',
+    # de terceros
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -129,10 +132,17 @@ USE_TZ = True
 
 AUTH_USER_MODEL = 'cuentas.UsuarioPers'
 
-STATIC_URL = 'static/'
+STATIC_URL = '/estaticos/'
+STATICFILES_DIRS = [str(BASE_DIR.joinpath('estaticos'))]
+
+STATIC_ROOT = BASE_DIR / 'archivosestaticos'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 LOGIN_REDIRECT_URL = 'inicio'
 LOGOUT_REDIRECT_URL = 'inicio'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
