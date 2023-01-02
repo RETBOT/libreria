@@ -1,6 +1,6 @@
 # Obtener imagen base
 FROM --platform=linux/amd64 python:3.8.3-slim-buster
-<!-- # by: RETBOT -->
+# by: RETBOT 
 # Establecer las variables de entorno 
 ENV PIP_DISABLE_PIP_VERSION_CHECK 1
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -15,4 +15,4 @@ RUN pip install -r requirements.txt
 
 # Copiar proyecto
 COPY . .
-<!-- # by: RETBOT -->
+# by: RETBOT 
