@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 from environs import Env
-
+# by: RETBOT
 env = Env()
 env.read_env()
 
@@ -31,7 +31,7 @@ DEBUG = env.bool('DJANGO_DEBUG')
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
-
+# by: RETBOT
 # Application definition
 
 INSTALLED_APPS = [
@@ -63,7 +63,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'config.urls'
-
+# by: RETBOT
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -152,7 +152,7 @@ ACCOUNT_SIGNUP_PASSOWRD_ENTRE_TWICE = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
-
+# by: RETBOT
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
@@ -168,4 +168,4 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
+# by: RETBOT
