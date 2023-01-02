@@ -1,3 +1,4 @@
+# by: RETBOT
 from django.views.generic import TemplateView
 
 # Create your views here.
@@ -6,3 +7,4 @@ class VistaPaginaInicio(TemplateView):
 
 class VistaAcercaDe(TemplateView):
     template_name = "acercade.html"
+# by: RETBOT
