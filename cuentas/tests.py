@@ -1,3 +1,4 @@
+# by: RETBOT
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 from django.urls import reverse, resolve
@@ -21,7 +22,8 @@ class PruebasPaginaRegistro(TestCase):
     formulario = self.respuesta.context.get('form')
     self.assertIsInstance(formulario, FormularioCreacionUsuario)
     self.assertContains(self.respuesta, 'csrfmiddlewaretoken')
-
+# by: RETBOT
   def test_vista_registro(self):
     vista = resolve('/cuentas/registro')
     self.assertEqual(vista.func.__name__, VistaPaginaRegistro.as_view().__name__)
+    # by: RETBOT
