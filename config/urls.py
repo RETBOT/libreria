@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+# by: RETBOT
 urlpatterns = [
     path('admin/', admin.site.urls),
     # Manejo de usuarios
@@ -24,4 +24,4 @@ urlpatterns = [
     # Aplicaciones locales 
     # path('cuentas/', include('cuentas.urls')), 
     path('',include('paginas.urls')),
-]
+]# by: RETBOT
