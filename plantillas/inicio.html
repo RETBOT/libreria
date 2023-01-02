@@ -1,4 +1,5 @@
 <!--plantillas/inicio.html-->
+<!-- # by: RETBOT -->
 {% extends '_base.html' %} {% load static %}
 
 {% block title %}- Inicio{% endblock title %}
@@ -9,9 +10,10 @@
   {% if user.is_authenticated %}
     <p>Hola {{ user.email }}</p>
     <a href="{% url 'account_logout' %}">Salir</a>
-  {% else %}
+  {% else %} <!-- # by: RETBOT -->
     <p>No ha iniciado sesión en </p>
     <a href="{% url 'account_login' %}">Acceder</a> |
     ¿No tienes cuenta? Crea una aqui <a href="{% url 'account_signup' %}">Registro</a>
   {% endif %}
 {% endblock content %}
+<!-- # by: RETBOT -->
