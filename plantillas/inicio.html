@@ -8,10 +8,10 @@
   <img class="portada" src="{% static 'img/Django.jpg' %}" alt="" width="480" height="270"> 
   {% if user.is_authenticated %}
     <p>Hola {{ user.email }}</p>
-    <a href="{% url 'logout' %}">Salir</a>
+    <a href="{% url 'account_logout' %}">Salir</a>
   {% else %}
     <p>No ha iniciado sesión en </p>
-    <a href="{% url 'login' %}">Acceder</a> |
-    ¿No tienes cuenta? Crea una aqui <a href="{% url 'registro' %}">Registro</a>
+    <a href="{% url 'account_login' %}">Acceder</a> |
+    ¿No tienes cuenta? Crea una aqui <a href="{% url 'account_signup' %}">Registro</a>
   {% endif %}
 {% endblock content %}
