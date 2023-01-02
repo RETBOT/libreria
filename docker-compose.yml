@@ -9,7 +9,7 @@ services:
       - 8080:8080
     depends_on:
       - db
-    
+    # by: RETBOT 
   db:
     image: postgres:13
     volumes:
@@ -19,3 +19,4 @@ services:
 
 volumes:
   postgres_data:
+  # by: RETBOT 
