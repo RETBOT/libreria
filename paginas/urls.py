@@ -1,3 +1,4 @@
+# by: RETBOT
 # paginas/urls.py
 from django.urls import path
 from .views import VistaPaginaInicio, VistaAcercaDe
@@ -7,3 +8,4 @@ urlpatterns = [
     path('acercade/', VistaAcercaDe.as_view(), name='acercade'),
     ## uuid
 ]
+# by: RETBOT
